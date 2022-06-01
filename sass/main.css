@@ -1,0 +1,227 @@
+/* Beginning of the mobile-first version */
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+
+  a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px outset lightgrey;
+    box-shadow: 1px 1px 3px black;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #header__logo {
+    width: 160px;
+    padding: 15px 0px 10px 0px;
+    margin: 0px;
+  }
+
+  #bloc-localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(65, 65, 65);
+    background-color: lightgrey;
+    padding: 10px 0px 12px 0px;
+    margin: 0px;
+  }
+
+  .fa-location-dot {
+    margin-right: 10px;
+  }
+
+  #bloc-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+  }
+  #bloc-order__para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 90%;
+    margin: 5px 0px 20px 0px;
+  }
+  #bloc-order__btn {
+    margin: 10px 0px 40px 0px;
+    padding: 16px 12px 16px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(#FF79DA 20%, #9356DC);
+    color: white;
+    box-shadow: 1px 1px 3px grey;
+    border: none;
+    border-radius: 25px;
+    transition: all 200ms;
+  }
+  #bloc-order #bloc-order__btn:hover {
+    background: linear-gradient(#FF79DA 30%, #9356DC);
+    box-shadow: 3px 3px 6px grey;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 60%;
+    margin: 25px 0px 5px 0px;
+    padding: 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 10px 5%;
+    padding: 0px;
+  }
+
+  form {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloc-choices__filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    height: 60px;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    background-color: rgb(238, 238, 238);
+    transition: all 200ms;
+  }
+
+  .bloc-choices__filters:hover {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 6px grey;
+  }
+
+  .numbers {
+    font-size: 14px;
+    background-color: #9356DC;
+    color: white;
+    padding: 4px 7px 3px 7px;
+    border-radius: 25px;
+    position: relative;
+    right: 12px;
+  }
+
+  #bloc-choices__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    height: 60px;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    background-color: #dbcbee;
+    box-shadow: 1px 1px 5px grey;
+    transition: all 200ms;
+  }
+
+  #bloc-choices__filter:hover {
+    background-color: #e9e0f5;
+    box-shadow: 3px 3px 6px grey;
+  }
+
+  .fa-mobile-screen-button,
+.fa-list-ul {
+    width: 30px;
+    font-size: 25px;
+    color: #4b4b4b;
+  }
+
+  .fa-store {
+    width: 30px;
+    font-size: 25px;
+    color: #9356DC;
+  }
+
+  .filters {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px 15px 5px;
+    background-color: rgb(238, 238, 238);
+    width: 74%;
+    position: relative;
+    left: 20px;
+    border: none;
+    transition: all 200ms;
+  }
+
+  .filters:hover {
+    background-color: rgb(245, 245, 245);
+  }
+
+  #filter {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px 15px 5px;
+    background-color: #dbcbee;
+    width: 74%;
+    position: relative;
+    left: 20px;
+    border: none;
+    transition: all 200ms;
+  }
+
+  #filter:hover {
+    background-color: #e9e0f5;
+  }
+
+  ::-moz-placeholder {
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+
+  :-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+
+  ::placeholder {
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+}/*# sourceMappingURL=main.css.map */

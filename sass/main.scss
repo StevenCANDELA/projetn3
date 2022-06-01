@@ -1,0 +1,220 @@
+        // Variables
+        $color-primary: #9356DC;
+        $color-secondary: #FF79DA;
+        $color-tertiary: #99E2DC;
+        $width-100: 100%;
+        $font-s: 14px;
+        $font-m: 16px;
+        $font-l: 20px;
+        // Mixins
+        @mixin flex-column--justify-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        @mixin flex-column--align-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @mixin flex-row--justify-center {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        @mixin flex-row--align-center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        @mixin margin-padding-null {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        @mixin font-m-bold {
+            font-size: $font-m;
+            font-weight: bold;
+        }
+        
+        @mixin font-l-bold {
+            font-size: $font-l;
+            font-weight: bold;
+        }
+        
+        @mixin button {
+            margin: 10px 0px 40px 0px;
+            padding: 16px 12px 16px 12px;
+            @include font-m-bold;
+            background: linear-gradient($color-secondary 20%, $color-primary);
+            color: white;
+            box-shadow: 1px 1px 3px grey;
+            border: none;
+            border-radius: 25px;
+        }
+        
+        @mixin filters {
+            width: 90%;
+            height: 60px;
+            box-shadow: 1px 1px 3px grey;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 16px;
+        }
+        /* Beginning of the mobile-first version */
+        
+        @media screen and (max-width:768px) {
+            body {
+                max-width: 768px;
+                padding: 0%;
+                margin: 0%;
+            }
+            * {
+                box-sizing: border-box;
+                font-family: "Roboto";
+            }
+            a {
+                background-color: transparent;
+                text-decoration: none;
+                color: black;
+            }
+            header {
+                width: $width-100;
+                @include flex-column--align-center;
+                border-bottom: 1px outset lightgrey;
+                box-shadow: 1px 1px 3px black;
+                @include margin-padding-null;
+            }
+            #header__logo {
+                width: 160px;
+                padding: 15px 0px 10px 0px;
+                margin: 0px;
+            }
+            #bloc-localisation {
+                @include flex-row--justify-center;
+                @include font-m-bold;
+                color: rgb(65, 65, 65);
+                background-color: lightgrey;
+                padding: 10px 0px 12px 0px;
+                margin: 0px;
+            }
+            .fa-location-dot {
+                margin-right: 10px;
+            }
+            #bloc-order {
+                @include flex-column--align-center;
+                justify-content: center;
+                background-color: rgb(245, 245, 245);
+                &__para {
+                    @include flex-column--align-center;
+                    justify-content: center;
+                    font-size: $font-m;
+                    width: 90%;
+                    margin: 5px 0px 20px 0px;
+                }
+                &__btn {
+                    @include button;
+                    transition: all 200ms;
+                }
+                #bloc-order__btn:hover {
+                    background: linear-gradient($color-secondary 30%, $color-primary);
+                    box-shadow: 3px 3px 6px grey;
+                }
+            }
+            h1 {
+                @include flex-column--align-center;
+                justify-content: center;
+                font-size: $font-l;
+                width: 60%;
+                margin: 25px 0px 5px 0px;
+                padding: 0px;
+            }
+            h2 {
+                @include font-l-bold;
+                margin: 20px 0px 10px 5%;
+                padding: 0px;
+            }
+            form {
+                @include margin-padding-null;
+                @include flex-column--align-center;
+            }
+            .bloc-choices__filters {
+                @include flex-row--align-center;
+                justify-content: left;
+                @include filters;
+                background-color: rgb(238, 238, 238);
+                transition: all 200ms;
+            }
+            .bloc-choices__filters:hover {
+                background-color: rgb(245, 245, 245);
+                box-shadow: 3px 3px 6px grey;
+            }
+            .numbers {
+                font-size: 14px;
+                background-color: #9356DC;
+                color: white;
+                padding: 4px 7px 3px 7px;
+                border-radius: 25px;
+                position: relative;
+                right: 12px;
+            }
+            #bloc-choices__filter {
+                @include flex-row--align-center;
+                justify-content: left;
+                @include filters;
+                background-color: #dbcbee;
+                box-shadow: 1px 1px 5px grey;
+                transition: all 200ms;
+            }
+            #bloc-choices__filter:hover {
+                background-color: #e9e0f5;
+                box-shadow: 3px 3px 6px grey;
+            }
+            .fa-mobile-screen-button,
+            .fa-list-ul {
+                width: 30px;
+                font-size: 25px;
+                color: #4b4b4b;
+            }
+            .fa-store {
+                width: 30px;
+                font-size: 25px;
+                color: #9356DC;
+            }
+            .filters {
+                @include font-m-bold;
+                padding: 15px 0px 15px 5px;
+                background-color: rgb(238, 238, 238);
+                width: 74%;
+                position: relative;
+                left: 20px;
+                border: none;
+                transition: all 200ms;
+            }
+            .filters:hover {
+                background-color: rgb(245, 245, 245);
+            }
+            #filter {
+                @include font-m-bold;
+                padding: 15px 0px 15px 5px;
+                background-color: #dbcbee;
+                width: 74%;
+                position: relative;
+                left: 20px;
+                border: none;
+                transition: all 200ms;
+            }
+            #filter:hover {
+                background-color: #e9e0f5;
+            }
+             ::placeholder {
+                color: black;
+                font-weight: bold;
+                border: none;
+            }
+        }
