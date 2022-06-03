@@ -119,12 +119,12 @@ $font-l: 20px;
         background-color: rgb(245, 245, 245);
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        position: relative;
-        bottom: 65px;
         z-index: 1;
     }
     #title {
         @include flex-column--align-center;
+        @include margin-padding-null;
+        width: $width-100;
     }
     h1 {
         display: flex;
@@ -132,7 +132,7 @@ $font-l: 20px;
         justify-content: space-between;
         align-items: center;
         font: 24px "Shrikhand";
-        width: 80%;
+        width: 94%;
     }
     .fa-heart {
         height: 32px;
@@ -140,32 +140,103 @@ $font-l: 20px;
         font-size: 30px;
         padding: 0px;
         margin: 0px;
-        z-index: 3;
         transition: all 200ms;
     }
-    .fa-heart:hover {
+    .fa-regular {
+        position: relative;
+        top: 16px;
+        z-index: 2;
+    }
+    .solid {
+        color: $color-primary;
+        position: relative;
+        bottom: 16px;
+        z-index: 3;
+        opacity: 0;
+        transition: all 200ms;
+    }
+    .solid:hover {
+        opacity: 1;
         transform-origin: 50% 0%;
-        color: #9356DC;
+    }
+    #title-heart--position {
+        display: flex;
+        flex-direction: column;
     }
     h2 {
         @include font-l-bold;
-        margin: 20px 0px 20px 5%;
+        margin: 20px 0px 20px 3%;
         padding: 0px;
     }
     #bloc-cards1 {
         width: $width-100;
         @include flex-column--align-center;
         @include margin-padding-null;
+        animation: blocs-fade 1.2s 1s both ease-in-out;
+    }
+    @keyframes blocs-fade {
+        0% {
+            opacity: 0;
+            transform: translateY(10px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
     #bloc-cards2 {
         width: $width-100;
         @include flex-column--align-center;
         @include margin-padding-null;
+        animation: blocs-fade 1.2s 2s both ease-in-out;
+    }
+    @keyframes blocs-fade {
+        0% {
+            opacity: 0;
+            transform: translateY(10px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
     #bloc-cards3 {
         width: $width-100;
         @include flex-column--align-center;
         @include margin-padding-null;
+        animation: blocs-fade 1.2s 3s both ease-in-out;
+    }
+    @keyframes blocs-fade {
+        0% {
+            opacity: 0;
+            transform: translateY(10px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .cards {
+        display: flex;
+    }
+    .animation-check {
+        width: 30%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #99E2DC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin: 0px;
+    }
+    .fa-circle-check {
+        font-size: 30px;
+        color: white;
+        transition: all 1.5s;
+    }
+    .animation-check-menu:hover+.fa-circle-check {
+        transform: rotate(3turn);
     }
     .card {
         width: 94%;
@@ -174,18 +245,25 @@ $font-l: 20px;
         margin: 0px 0px 20px 0px;
         padding: 0%;
         box-shadow: 1px 1px 5px grey;
-        z-index: 1;
+        z-index: 2;
     }
-    .bloc-description-price {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    h3 {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 3;
+    }
+    h4 {
+        width: 100%;
+        font-size: $font-s;
+        font-weight: normal;
+        z-index: 3;
     }
     span {
         margin-right: 5%;
         font-size: 14px;
         font-weight: bold;
+        z-index: 4;
     }
     #bloc-cards__btn--position {
         width: $width-100;
@@ -194,13 +272,16 @@ $font-l: 20px;
     }
     #bloc-cards__btn {
         @include button;
+        transition: all 200ms;
+    }
+    #bloc-cards__btn:hover {
+        background: linear-gradient($color-secondary 30%, $color-primary);
+        box-shadow: 3px 3px 6px grey;
     }
     footer {
         background-color: black;
         height: 190px;
         @include margin-padding-null;
-        position: relative;
-        bottom: 65px;
     }
     #footer__logo {
         font: 18px "Shrikhand";

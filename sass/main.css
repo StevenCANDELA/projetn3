@@ -17,6 +17,82 @@
     color: black;
   }
 
+  #container-loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .bar {
+    width: 10px;
+    height: 70px;
+    background: rgb(245, 245, 245);
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    -webkit-animation: loader 1.2s linear 3;
+            animation: loader 1.2s linear 3;
+  }
+
+  .bar1 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+
+  .bar2 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+
+  .bar3 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+
+  .bar4 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+
+  .bar5 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+
+  @-webkit-keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      background: #9356DC;
+    }
+    50% {
+      transform: scaleY(1);
+      background: #FF79DA;
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: #9356DC;
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      background: #9356DC;
+    }
+    50% {
+      transform: scaleY(1);
+      background: #FF79DA;
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: #9356DC;
+    }
+  }
   header {
     width: 100%;
     display: flex;
@@ -301,15 +377,18 @@
   }
 
   .indication-new {
-    width: 100px;
+    width: auto;
     font-size: 16px;
     font-weight: bold;
     background-color: #99E2DC;
     color: darkgreen;
-    padding: 5px;
+    padding: 6px;
     margin: 0px;
-    z-index: 3;
+    z-index: 4;
     box-shadow: 1px 1px 5px black;
+    position: relative;
+    bottom: 210px;
+    left: 12%;
   }
 
   .fa-heart {
@@ -318,13 +397,29 @@
     font-size: 30px;
     padding: 0px;
     margin: 0px;
-    z-index: 3;
     transition: all 200ms;
   }
 
-  .fa-heart:hover {
-    transform-origin: 50% 0%;
+  .fa-regular {
+    position: relative;
+    top: 12px;
+    right: 20px;
+    z-index: 3;
+  }
+
+  .solid {
     color: #9356DC;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    z-index: 4;
+    opacity: 0;
+    transition: all 200ms;
+  }
+
+  .solid:hover {
+    opacity: 1;
+    transform-origin: 50% 0%;
   }
 
   footer {
@@ -355,6 +450,7 @@
 .fa-handshake-angle {
     width: 20px;
     margin-right: 10px;
+    color: white;
   }
 
   /* Beginning of normalize.css */
