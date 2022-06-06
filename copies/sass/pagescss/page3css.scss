@@ -81,10 +81,7 @@ $font-l: 20px;
         font-family: "Roboto";
     }
     a {
-<<<<<<< HEAD
-=======
         background-color: transparent;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         text-decoration: none;
         color: black;
     }
@@ -122,10 +119,7 @@ $font-l: 20px;
         background-color: rgb(245, 245, 245);
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-<<<<<<< HEAD
-=======
         z-index: 1;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #title {
         @include flex-column--align-center;
@@ -151,20 +145,6 @@ $font-l: 20px;
     .fa-regular {
         position: relative;
         top: 16px;
-<<<<<<< HEAD
-    }
-    .solid {
-        background-clip: text;
-        background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
-        color: transparent;
-        -webkit-background-clip: text;
-        -webkit-background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
-        -webkit-color: transparent;
-        position: relative;
-        bottom: 16px;
-        opacity: 0;
-        z-index: 3;
-=======
         z-index: 2;
     }
     .solid {
@@ -173,15 +153,11 @@ $font-l: 20px;
         bottom: 16px;
         z-index: 3;
         opacity: 0;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         transition: all 200ms;
     }
     .solid:hover {
         opacity: 1;
-<<<<<<< HEAD
-=======
         transform-origin: 50% 0%;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #title-heart--position {
         display: flex;
@@ -189,15 +165,8 @@ $font-l: 20px;
     }
     h2 {
         @include font-l-bold;
-<<<<<<< HEAD
-        width: 10%;
-        border-bottom: 3px solid $color-tertiary;
-        margin: 20px 0px 20px 3%;
-        padding-bottom: 5px;
-=======
         margin: 20px 0px 20px 3%;
         padding: 0px;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #bloc-cards1 {
         width: $width-100;
@@ -247,23 +216,6 @@ $font-l: 20px;
             transform: translateY(0px);
         }
     }
-<<<<<<< HEAD
-    .animation-check-menu {
-        width: 100%;
-    }
-    .animation-check {
-        width: 0%;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: all 400ms ease-in-out;
-    }
-    .card:hover .animation-check {
-        width: 21%;
-        transform: scaleX(1);
-        transform-origin: right;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-=======
     .cards {
         display: flex;
     }
@@ -271,25 +223,10 @@ $font-l: 20px;
         width: 30%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         background-color: #99E2DC;
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-        margin: 0px;
-    }
-    .fa-circle-check {
-        font-size: 20px;
-        color: white;
-        transition: all 400ms 200ms;
-    }
-    .card:hover .fa-circle-check {
-        transform: rotate(1turn);
-    }
-    .card {
-        display: flex;
-=======
         padding: 30px;
         margin: 0px;
     }
@@ -302,45 +239,10 @@ $font-l: 20px;
         transform: rotate(3turn);
     }
     .card {
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         width: 94%;
         background-color: white;
         border-radius: 15px;
         margin: 0px 0px 20px 0px;
-<<<<<<< HEAD
-        padding: 0px;
-        box-shadow: 1px 1px 5px grey;
-    }
-    h3 {
-        width: 80%;
-        font-size: 18px;
-        font-weight: bold;
-        word-wrap: break-word;
-        flex-wrap: nowrap;
-        padding: 10px 0px 5px 8px;
-        margin: 0px;
-    }
-    .bloc-description-price {
-        @include flex-row--align-center;
-        justify-content: space-between;
-    }
-    h4 {
-        width: 74%;
-        font-size: $font-s;
-        font-weight: normal;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        word-wrap: normal;
-        flex-wrap: nowrap;
-        padding: 5px 0px 10px 8px;
-        margin: 0px;
-    }
-    span {
-        margin-right: 5%;
-        font-size: 15px;
-        font-weight: bold;
-=======
         padding: 0%;
         box-shadow: 1px 1px 5px grey;
         z-index: 2;
@@ -362,7 +264,6 @@ $font-l: 20px;
         font-size: 14px;
         font-weight: bold;
         z-index: 4;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #bloc-cards__btn--position {
         width: $width-100;

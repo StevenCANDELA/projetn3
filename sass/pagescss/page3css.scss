@@ -81,6 +81,10 @@ $font-l: 20px;
         font-family: "Roboto";
     }
     a {
+<<<<<<< HEAD
+=======
+        background-color: transparent;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         text-decoration: none;
         color: black;
     }
@@ -118,6 +122,10 @@ $font-l: 20px;
         background-color: rgb(245, 245, 245);
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+<<<<<<< HEAD
+=======
+        z-index: 1;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #title {
         @include flex-column--align-center;
@@ -143,6 +151,7 @@ $font-l: 20px;
     .fa-regular {
         position: relative;
         top: 16px;
+<<<<<<< HEAD
     }
     .solid {
         background-clip: text;
@@ -155,10 +164,24 @@ $font-l: 20px;
         bottom: 16px;
         opacity: 0;
         z-index: 3;
+=======
+        z-index: 2;
+    }
+    .solid {
+        color: $color-primary;
+        position: relative;
+        bottom: 16px;
+        z-index: 3;
+        opacity: 0;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         transition: all 200ms;
     }
     .solid:hover {
         opacity: 1;
+<<<<<<< HEAD
+=======
+        transform-origin: 50% 0%;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #title-heart--position {
         display: flex;
@@ -166,10 +189,15 @@ $font-l: 20px;
     }
     h2 {
         @include font-l-bold;
+<<<<<<< HEAD
         width: 10%;
         border-bottom: 3px solid $color-tertiary;
         margin: 20px 0px 20px 3%;
         padding-bottom: 5px;
+=======
+        margin: 20px 0px 20px 3%;
+        padding: 0px;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #bloc-cards1 {
         width: $width-100;
@@ -219,6 +247,7 @@ $font-l: 20px;
             transform: translateY(0px);
         }
     }
+<<<<<<< HEAD
     .animation-check-menu {
         width: 100%;
     }
@@ -234,10 +263,20 @@ $font-l: 20px;
         transform-origin: right;
         border-top-right-radius: 13px;
         border-bottom-right-radius: 13px;
+=======
+    .cards {
+        display: flex;
+    }
+    .animation-check {
+        width: 30%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         background-color: #99E2DC;
         display: flex;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         margin: 0px;
     }
     .fa-circle-check {
@@ -250,10 +289,25 @@ $font-l: 20px;
     }
     .card {
         display: flex;
+=======
+        padding: 30px;
+        margin: 0px;
+    }
+    .fa-circle-check {
+        font-size: 30px;
+        color: white;
+        transition: all 1.5s;
+    }
+    .animation-check-menu:hover+.fa-circle-check {
+        transform: rotate(3turn);
+    }
+    .card {
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
         width: 94%;
         background-color: white;
         border-radius: 15px;
         margin: 0px 0px 20px 0px;
+<<<<<<< HEAD
         padding: 0px;
         box-shadow: 1px 1px 5px grey;
     }
@@ -289,6 +343,29 @@ $font-l: 20px;
         margin-right: 5%;
         font-size: 15px;
         font-weight: bold;
+=======
+        padding: 0%;
+        box-shadow: 1px 1px 5px grey;
+        z-index: 2;
+    }
+    h3 {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 3;
+    }
+    h4 {
+        width: 100%;
+        font-size: $font-s;
+        font-weight: normal;
+        z-index: 3;
+    }
+    span {
+        margin-right: 5%;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 4;
+>>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     }
     #bloc-cards__btn--position {
         width: $width-100;

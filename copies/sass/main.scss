@@ -91,36 +91,11 @@
             #container-loading {
                 @include flex-row--justify-center;
                 align-items: center;
-<<<<<<< HEAD
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                z-index: 6;
-                display: none;
-                background-color: rgb(245, 245, 245);
-                animation: loading-container 4, 2s both;
-            }
-            #loading {
-                z-index: 7;
-            }
-            @keyframes loading-container {
-                0% {
-                    scale: 1;
-                }
-                75% {
-                    scale: 1;
-                }
-                100% {
-                    scale: 0;
-                }
-            }
-=======
                 width: 100%;
                 height: 300px;
                 background-color: rgb(245, 245, 245);
             }
             #loading {}
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
             .bar {
                 width: 10px;
                 height: 70px;
@@ -129,12 +104,7 @@
                 transform-origin: bottom center;
                 border-top-right-radius: 20px;
                 border-top-left-radius: 20px;
-<<<<<<< HEAD
-                z-index: 8;
-                animation: loader 1.4s linear 2;
-=======
                 animation: loader 1.2s linear 3;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
             }
             .bar1 {
                 animation-delay: 0.1s;
@@ -387,16 +357,7 @@
                 z-index: 3;
             }
             .solid {
-<<<<<<< HEAD
-                background-clip: text;
-                background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
-                color: transparent;
-                -webkit-background-clip: text;
-                -webkit-background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
-                -webkit-color: transparent;
-=======
                 color: $color-primary;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
                 position: relative;
                 bottom: 20px;
                 right: 20px;
@@ -406,10 +367,7 @@
             }
             .solid:hover {
                 opacity: 1;
-<<<<<<< HEAD
-=======
                 transform-origin: 50% 0%;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
             }
             footer {
                 background-color: black;
