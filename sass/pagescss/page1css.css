@@ -6,10 +6,6 @@
   }
 
   a {
-<<<<<<< HEAD
-=======
-    background-color: transparent;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     text-decoration: none;
     color: black;
   }
@@ -59,10 +55,8 @@
     background-color: rgb(245, 245, 245);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-<<<<<<< HEAD
-=======
-    z-index: 1;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
+    margin: 0px;
+    padding: 0px;
   }
 
   #title {
@@ -95,7 +89,6 @@
   .fa-regular {
     position: relative;
     top: 16px;
-<<<<<<< HEAD
   }
 
   .solid {
@@ -109,26 +102,11 @@
     bottom: 16px;
     opacity: 0;
     z-index: 3;
-=======
-    z-index: 2;
-  }
-
-  .solid {
-    color: #9356DC;
-    position: relative;
-    bottom: 16px;
-    z-index: 3;
-    opacity: 0;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     transition: all 200ms;
   }
 
   .solid:hover {
     opacity: 1;
-<<<<<<< HEAD
-=======
-    transform-origin: 50% 0%;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
   }
 
   #title-heart--position {
@@ -139,15 +117,10 @@
   h2 {
     font-size: 20px;
     font-weight: bold;
-<<<<<<< HEAD
     width: 10%;
     border-bottom: 3px solid #99E2DC;
     margin: 20px 0px 20px 3%;
     padding-bottom: 5px;
-=======
-    margin: 20px 0px 20px 3%;
-    padding: 0px;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
   }
 
   #bloc-cards1 {
@@ -224,7 +197,6 @@
       transform: translateY(0px);
     }
   }
-<<<<<<< HEAD
   .animation-check-menu {
     width: 100%;
   }
@@ -242,29 +214,14 @@
     transform-origin: right;
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
-=======
-  .cards {
-    display: flex;
-  }
-
-  .animation-check {
-    width: 30%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     background-color: #99E2DC;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-=======
-    padding: 30px;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     margin: 0px;
   }
 
   .fa-circle-check {
-<<<<<<< HEAD
     font-size: 20px;
     color: white;
     transition: all 400ms 200ms;
@@ -276,23 +233,10 @@
 
   .card {
     display: flex;
-=======
-    font-size: 30px;
-    color: white;
-    transition: all 1.5s;
-  }
-
-  .animation-check-menu:hover + .fa-circle-check {
-    transform: rotate(3turn);
-  }
-
-  .card {
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
     width: 94%;
     background-color: white;
     border-radius: 15px;
     margin: 0px 0px 20px 0px;
-<<<<<<< HEAD
     padding: 0px;
     box-shadow: 1px 1px 5px grey;
   }
@@ -325,37 +269,12 @@
     flex-wrap: nowrap;
     padding: 5px 0px 10px 8px;
     margin: 0px;
-=======
-    padding: 0%;
-    box-shadow: 1px 1px 5px grey;
-    z-index: 2;
-  }
-
-  h3 {
-    width: 100%;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 3;
-  }
-
-  h4 {
-    width: 100%;
-    font-size: 14px;
-    font-weight: normal;
-    z-index: 3;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
   }
 
   span {
     margin-right: 5%;
-<<<<<<< HEAD
     font-size: 15px;
     font-weight: bold;
-=======
-    font-size: 14px;
-    font-weight: bold;
-    z-index: 4;
->>>>>>> 62d928cc1b8d8db9c36775393b8cf2ad080362b9
   }
 
   #bloc-cards__btn--position {
