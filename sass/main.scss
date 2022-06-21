@@ -275,23 +275,23 @@
                 @include flex-row--align-center;
                 justify-content: left;
                 @include filters;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 box-shadow: 1px 1px 5px grey;
                 transition: all 200ms;
             }
             #bloc-choices__filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
                 box-shadow: 3px 3px 6px grey;
             }
             .fa-mobile-screen-button,
-            .fa-list-ul {
-                width: 30px;
-                font-size: 25px;
-                color: #4b4b4b;
-            }
+            .fa-list-ul,
             .fa-store {
                 width: 30px;
                 font-size: 25px;
+                color: #4b4b4b;
+                transition: all 200ms;
+            }
+            #bloc-choices__filter:hover .fa-store {
                 color: #9356DC;
             }
             .filters {
@@ -310,15 +310,18 @@
             #filter {
                 @include font-m-bold;
                 padding: 15px 0px 15px 5px;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 width: 74%;
                 position: relative;
                 left: 20px;
                 border: none;
                 transition: all 200ms;
             }
+            #bloc-choices__filter:hover #filter {
+                background-color: #b0a1b9;
+            }
             #filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
             }
              ::placeholder {
                 color: black;
@@ -781,23 +784,23 @@
                 @include flex-row--align-center;
                 justify-content: left;
                 @include filters-tablet;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 box-shadow: 1px 1px 5px grey;
                 transition: all 200ms;
             }
             #bloc-choices__filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
                 box-shadow: 3px 3px 6px grey;
             }
             .fa-mobile-screen-button,
-            .fa-list-ul {
-                width: 30px;
-                font-size: 25px;
-                color: #4b4b4b;
-            }
+            .fa-list-ul,
             .fa-store {
                 width: 30px;
                 font-size: 25px;
+                color: #4b4b4b;
+                transition: all 200ms;
+            }
+            #bloc-choices__filter:hover .fa-store {
                 color: #9356DC;
             }
             .filters {
@@ -816,15 +819,18 @@
             #filter {
                 @include font-s-bold;
                 padding: 10px 0px 10px 5px;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 width: 74%;
                 position: relative;
                 left: 5px;
                 border: none;
                 transition: all 200ms;
             }
+            #bloc-choices__filter:hover #filter {
+                background-color: #b0a1b9;
+            }
             #filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
             }
              ::placeholder {
                 color: black;
@@ -1289,23 +1295,23 @@
                 @include flex-row--align-center;
                 justify-content: left;
                 @include filters-tablet;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 box-shadow: 1px 1px 5px grey;
                 transition: all 200ms;
             }
             #bloc-choices__filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
                 box-shadow: 3px 3px 6px grey;
             }
             .fa-mobile-screen-button,
-            .fa-list-ul {
-                width: 30px;
-                font-size: 25px;
-                color: #4b4b4b;
-            }
+            .fa-list-ul,
             .fa-store {
                 width: 30px;
                 font-size: 25px;
+                color: #4b4b4b;
+                transition: all 200ms;
+            }
+            #bloc-choices__filter:hover .fa-store {
                 color: #9356DC;
             }
             .filters {
@@ -1324,15 +1330,18 @@
             #filter {
                 @include font-s-bold;
                 padding: 10px 0px 10px 5px;
-                background-color: #dbcbee;
+                background-color: rgb(238, 238, 238);
                 width: 74%;
                 position: relative;
                 left: 5px;
                 border: none;
                 transition: all 200ms;
             }
+            #bloc-choices__filter:hover #filter {
+                background-color: #b0a1b9;
+            }
             #filter:hover {
-                background-color: #e9e0f5;
+                background-color: #b0a1b9;
             }
              ::placeholder {
                 color: black;
