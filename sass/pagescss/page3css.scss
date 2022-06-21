@@ -72,6 +72,16 @@ $font-l: 20px;
     object-position: 50% 40%;
 }
 
+@mixin pictures-tablet {
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+@mixin pictures-desktop {
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
 
 /* Beginning of the mobile-first version */
 
@@ -516,7 +526,7 @@ $font-l: 20px;
     #picture {
         width: $width-100;
         height: 240px;
-        @include pictures;
+        @include pictures-tablet;
         margin: 0px;
     }
     #bloc-cards {
@@ -575,14 +585,16 @@ $font-l: 20px;
     }
     h2 {
         @include font-l-bold;
-        width: 10%;
+        width: 5%;
         border-bottom: 3px solid $color-tertiary;
         margin: 20px 0px 20px 3%;
         padding-bottom: 5px;
     }
     #bloc-cards1 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 1s both ease-in-out;
     }
@@ -598,7 +610,9 @@ $font-l: 20px;
     }
     #bloc-cards2 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 2s both ease-in-out;
     }
@@ -614,7 +628,9 @@ $font-l: 20px;
     }
     #bloc-cards3 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 3s both ease-in-out;
     }
@@ -663,7 +679,7 @@ $font-l: 20px;
     }
     .card {
         display: flex;
-        width: 94%;
+        width: 46%;
         background-color: white;
         border-radius: 15px;
         margin: 0px 0px 20px 0px;
@@ -921,7 +937,7 @@ $font-l: 20px;
     #picture {
         width: $width-100;
         height: 240px;
-        @include pictures;
+        @include pictures-desktop;
         margin: 0px;
     }
     #bloc-cards {
@@ -980,14 +996,16 @@ $font-l: 20px;
     }
     h2 {
         @include font-l-bold;
-        width: 10%;
+        width: 4%;
         border-bottom: 3px solid $color-tertiary;
         margin: 20px 0px 20px 3%;
         padding-bottom: 5px;
     }
     #bloc-cards1 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 1s both ease-in-out;
     }
@@ -1003,7 +1021,9 @@ $font-l: 20px;
     }
     #bloc-cards2 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 2s both ease-in-out;
     }
@@ -1019,7 +1039,9 @@ $font-l: 20px;
     }
     #bloc-cards3 {
         width: $width-100;
-        @include flex-column--align-center;
+        @include flex-row--align-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         @include margin-padding-null;
         animation: blocs-fade 1.2s 3s both ease-in-out;
     }
@@ -1068,7 +1090,7 @@ $font-l: 20px;
     }
     .card {
         display: flex;
-        width: 94%;
+        width: 32.5%;
         background-color: white;
         border-radius: 15px;
         margin: 0px 0px 20px 0px;
